@@ -1,0 +1,43 @@
+1. When computing the cost for a pixel that has already been
+evaluated. The cost from the first computation is stored and 
+retrieved when we land on the same pixel.
+
+2. M(i, j) = cost of pixel (i, j)
+   S(i, j) = saliency of pixel (i, j)
+   M(i-1, j-1), M(i-1, j), M(i-1, j+1) = costs of the three pixels
+                                         directly above pixel (i, j)
+                                         respectively. 
+
+   M(i, j) = S(i, j) + min[M(i-1, j-1), M(i-1, j), M(i-1, j+1)]
+    
+   This is to find the cost of arriving at any one pixel from the 
+   cost of the three pixels directly above it. The pixel with the 
+   lowest cost in the last row would belong to the seam of lowest
+   energy. The seam could then be recovered by tracing the pixels
+   that lead to that lowest-cost pixel in the last row.  
+
+3. To find the cost of any one pixel (ignoring edges), we have to
+   find the cost of the three pixels directly above it. Each of these
+   pixels would then have to find the cost of the three pixels above
+   each of them. The calling of the cost function branches out upwards
+   until we reach the first row. Hence if we have N rows, the cost
+   function would be called 3^N times. This applies only for 
+   one pixel at the bottom. To find the cost for all pixels on the 
+   bottom row, we have to iterate through the N columns repeating
+   this process for each pixel. Therefore the total complexity is
+   O(N * 3^N).
+
+4. # of computations = 50 * 3^50
+   time = (# of computations) / (10^9)
+        = 50 * 3^50 / 10^9
+        = 3.6 * 10^16 s
+
+5. With dynamic programming, since previously computed costs are 
+   stored, only N * N computations have to be made (i.e. calculating
+   the cost for each pixel). Hence the complexity is O(N^2).
+
+6. # of computations = 50^2
+   time = (# of computations) / (10^9)
+        = 50^2 / 10^9
+        = 2.5 * 10^(-6) s
+     

@@ -1,0 +1,55 @@
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.5) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./d...done.
+(gdb) break [K[K[K[K[K[Kbreak debugging2.cpp:77
+Breakpoint 1 at 0x400878: file debugging2.cpp, line 77.
+(gdb) run
+Starting program: /home/cs2user/CS2/cpp_intro/d 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffde88) at debugging2.cpp:77
+77	    cout << divide(15625, 37) << endl;
+(gdb) step
+divide (a=15625, b=37) at debugging2.cpp:33
+33	    unsigned int x = 0, y = 0, z = sizeof(a) * 8;
+(gdb) bt
+#0  divide (a=15625, b=37) at debugging2.cpp:33
+#1  0x0000000000400887 in main (argc=1, argv=0x7fffffffde88)
+    at debugging2.cpp:77
+(gdb) print x
+$1 = 0
+(gdb) print x[Ky
+$2 = 0
+(gdb) print y[Ka
+$3 = 15625
+(gdb) print a[Kb
+$4 = 37
+(gdb) print bab/b
+$5 = 422
+(gdb) step
+35	    while (z != 0)
+(gdb) stepprint a/b[2Pbayx
+$6 = 0
+(gdb) print x[3Pstepprint a/b[2Pbay
+$7 = 0
+(gdb) print yx[3Pstepprint a/b[2Pba
+$8 = 15625
+(gdb) print ayx[3Pstepprint a/b[2Pb
+$9 = 37
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 4433] will be killed.
+
+Quit anyway? (y or n) y

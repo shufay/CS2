@@ -1,0 +1,6 @@
+1. The neighbour with the minimum edge weight.
+
+2. At each step, we investigate the node connected to visited nodes that has the minimum edge weight. We update the distance values for the nodes connected to this new node if the new distance values are lower. This yields the shortest path between the source node to all other nodes because we update the distance value of each node whenever we find a shorter path to it. 
+
+3. We are done when we have 'set' the distance values for all nodes. We can derive the path we want by backtracking from the end node, following the edges that led to the minimum distance values for each node. 
+

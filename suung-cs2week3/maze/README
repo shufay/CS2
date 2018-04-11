@@ -1,0 +1,14 @@
+BFS would be faster if each node has a small number of child nodes. Then a lower number of nodes has to be iterated over at each depth. 
+
+DFS would be faster if the tree has a small depth. This would reduce the amount of backtracking that might occur. 
+
+Stacks can be used to solve the Knight's Tour problem in a similar fashion as solving a maze. The starting coordinate and possible moves are pushed onto the stack. If the moves up to a point terminate and do not cover the whole board, we backtrack and traverse down another edge in the tree. 
+
+Queues can be used in file downloading, where the first file submitted (first to be enqueued) is the first to be downloaded (first to be dequeued).
+
+
+
+
+
+
+

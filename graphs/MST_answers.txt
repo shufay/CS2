@@ -1,0 +1,17 @@
+1. Three essential properties of a MST:
+
+    a. It is a tree.
+        - it does not contain any cycles.
+
+    b. It spans the graph.
+        - it contains all of the graph's nodes and is a subset of the graph.
+
+    c. It is the spanning tree with the minimal weight.
+        - the sum of the weights of all edges in the tree is the minimum one. 
+
+2. We should pick the node/edge connected to the first node that has an edge with the minimum weight. This ensures that the tree we built so far is minimum.
+
+3. We should continue picking nodes/edges (that have not been picked) connected to the tree with the minimum edge weight. This ensures that we do not create a cycle and that the edge weights are the least possible. We are finished when all of the nodes are in the tree because the tree would be a minimal spanning tree. 
+
+4. At each step, we should pick the edge that has the minimum weight and that does not create a cycle. This ensures that we have built a minimal tree so far because all of the edges are the least possible. We are finished when N-1 edges have been picked because this is the number of edges in a tree given N nodes. 
+

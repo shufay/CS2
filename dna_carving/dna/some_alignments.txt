@@ -1,0 +1,42 @@
+-------------------
+Influenza A viruses
+-------------------
+----------
+Sequence 1
+-----------
+strain = A/mute swan/Shimane/3211A001/2017
+serotype = H5N6
+host = Cygnus olor
+country = Japan:Shimane
+
+length = 643 characters
+
+-----------
+Sequence 2
+-----------
+strain = A/chicken/Ismailia/144CA/2014
+serotype = H5N1
+host = Gallus gallus
+country = Egypt:Ismailia
+
+length = 608 characters
+
+-----------------
+Aligned sequences
+-----------------
+-----------
+Sequence 1
+-----------
+cacgctacct aactgacatg actcttgaag aaatgtcaag ggactggttc atgctcatgc ccaaacagaa agtggc aggt tcactt tgca tcaaaa tgga ccaggc aata atggataaaa acatca tatt gaaagcaaac ttcagt gtaa tttttaaccg actggaagct ctaata ctac ttagagcttt cacaga agaa ggagcaattg tgggagaaat ctcaccgtta ccttcttttc caggac atac tgatga ggat gtcaaa aatg caattggggt cctcatcggg ggactt gaat ggaatg ataa cacagttcgg gtctctgaaa ctctac agag attcgcttgg agaaacagta atgagg atgg gagaccttca ctccctccaa agtaga aacg gaaaat ggcg agaaca attg ggtcag aagt ttgaagaaat aagatggctg attgaagaag tacgac atag attgaagatt acagaaaata gcttcg aaca gataacgttt atgcaa gcct tacaac tatt gcttga agtg gaacaa gaga taagaacttt ctcgtt tcag cttatttaat gataa
+
+-----------
+Sequence 2
+-----------
+cacgctacct aactgacatg actcttgaag aaatgtcaag ggactggttc atgctcatgc ccaaacagaa agtggc aggt tcactt tgca tcaaaa tgga ccaggc aata atggataaaa acatca tatt gaaagcaaac ttcagt gtaa tttttaaccg actggaagct ctaata ctac ttagagcttt cacaga agaa ggagcaattg tgggagaaat ctcaccgtta ccttcttttc caggac atac tgatga ggat gtcaaa aatg caattggggt cctcatcggg ggactt gaat ggaatg ataa cacagttcgg gtctctgaaa ctctac agag attcgcttgg agaaacagta atgagg atgg gagaccttca ctccctccaa agtaga aacg gaaaat ggcg agaaca attg ggtcag aagt ttgaagaaat aagatggctg attgaagaag tacgac atag attgaagatt acagaaaata gcttcg aaca gataacgttt atgcaa gcct tacaac tatt gcttga agtg gaacaa gaga taagaacttt ctcgtt tcag cttatttaat gataa
+
+
+*|s|s*|ssss||s||sss|s|sss|sss|||**|*||sss*|***|s|s|*|||||||*||*|||ssssss||||s||||*|t||||s||*|||t||||s||||||t||||s||||||t||||s||||||*|||**|||*|t||||s||||||*||**||||||t||*|*||*|**||||s|*|*||*|***||||||t||||s||||||**||*||||||t||||s|||*||**|**||||||*||**||||||**|**||||||**|**||||||t||||s|**|||t||||s||||||t||||s||||||*|***||||||**||*||||||t||||s||||||t||||s|||*||***|*||||||**||**|*|||t||||s||||||*|*|*||||*|**|**||||||t||||s|||||**||**||||||***|*|**|||t||||s||||||t||||s|||*||t||||s*|||||t||||s||||||*||**||||||**|**||||||**|**||||||t||||s||||||*|*|*||||||*|***||||*|t||||s||||||**||*||||||t||||s||||||t||*|s||||||t||||s||*|||t||||s||||||***|*||||||t||||s||||ss|ss||ss|||
+
+Alignment score : 375
+
+The alignment score between these two strains of virus is pretty high. This reflects similarities in their biological structures (their common ancestry) as well as differences that could have resulted from evolution (where they have diverged). 

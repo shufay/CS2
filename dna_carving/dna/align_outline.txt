@@ -1,0 +1,42 @@
+Takes two strings, s and t, as argument.
+
+Base case: 
+	If either s or t are empty, we're done aligning.
+
+Else, we align substrings of s and t by doing one of three things:
+	(i) 	Take a gap on s and the first character of t
+	(ii) 	Take a gap on t and the first character of s
+	(iii)	Take the first characters of s and t. 
+
+	For each case, we compute the alignment score and recurse on the remaining strings. We then add the alignment score from these new substrings to the previous one.
+
+We can use memoization by checking whether the remaining strings have already been aligned and the alignment scores computed. If yes, we simply take the scores that have been computed. If no, we go ahead with the alignment and store the alignments and scores.  	
+
+
+OUTLINE
+--------
+if s, t in memo:
+	return memo
+
+if s or t is empty:
+	return compute_score(s, t)
+
+else:
+	// CASE 1
+	s1 = ""
+	t1 = t[0]
+	score1 = compute_score(s1, t1) + align(s, t[1:])
+
+	// CASE 2
+	s1 = s[0]
+	t1 = ""
+	score2 = compute_score(s1, t1) + align(s[1:], t)
+
+	// CASE 3
+	s1 = s[0]
+	t1 = t[0]
+	score3 = compute_score(s1, t1) + align(s[1:], t[1:])
+
+	max = max(score1, score2, score3)
+	memo.append(max)
+	return max
